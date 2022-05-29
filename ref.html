@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>website HTML CSS</title>
+  <link rel="stylesheet" href="css/ref.css" />
+  <script src="js/unix.js"></script>
+
+  <!--fav-icon-->
+  <link rel="shortcut icon" href="images/fav-icon.png" />
+  <!--==Import-Poppins-Font-Family=============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<>
+  <section class="main">
+    <!--navigation-->
+    <nav>
+      <!--logo-->
+      <a href="home.html" class="logo">
+        <img src="images/logo.png" />
+      </a>
+      <!--menu-btn----------->
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon"></span>
+      </label>
+      <!--menu-->
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="Components.html">Components</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ref.html"> References</a></li>
+
+      </ul>
+    </nav>
+    <!-- <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div> -->
+
+    <!--main-content-->
+    <div class="home-content">
+      <!--text-->
+      <div class="home-text">
+        <h1>UNIX <span class="auto-type"></span> references</strong></h1>
+        <p id="rb" onmouseout="mouseout();" onmouseover="mouseover();">The references are listed below. </p>
+        <!--login-btn-->
+        <a href="#" class="main-login">Home</a>
+      </div>
+      <!--img-->
+      <div class="home-logo">
+        <img src="images/file.png" />
+      </div>
+    </div>
+    <!--arrow-->
+    <div class="arrow"></div>
+    <span class="scroll">Scroll</span>
+  </section>
+
+  <section id="refplaces">
+    <h2>REFERENCES</h2>
+
+    <!--box---------->
+    <div class="refbox">
+      <a id="citeR"
+        href="Attention Required! | Cloudflare. (2022). Canva. https://www.canva.com"
+        target="_blank">Attention Required! | Cloudflare. (2022). Canva. https://www.canva.com</a>
+    </div>
+       <!--box---------->
+       <div class="refbox">
+        <a id="citeR"
+          href="Linux vs. Unix: What’s the difference? (2022). Opensource.Com. https://opensource.com/article/18/5/differences-between-linux-and-unix"
+          target="_blank">Linux vs. Unix: What’s the difference? (2022). Opensource.Com. https://opensource.com/article/18/5/differences-between-linux-and-unix</a>
+      </div>   <!--box---------->
+      <div class="refbox">
+        <a id="citeR"
+          href="The UNIX® Standard. (2019a, June 4). The Open Group Website. https://www.opengroup.org/membership/forums/platform/unix"
+          target="_blank">The UNIX® Standard. (2019a, June 4). The Open Group Website. https://www.opengroup.org/membership/forums/platform/unix</a>
+      </div>   <!--box---------->
+      <div class="refbox">
+        <a id="citeR"
+          href="UNIX | Definition, Meaning, History, & Facts. (2022). Encyclopedia Britannica. Retrieved 2022, from https://www.britannica.com/technology/UNIX"
+          target="_blank">UNIX | Definition, Meaning, History, & Facts. (2022). Encyclopedia Britannica. Retrieved 2022, from https://www.britannica.com/technology/UNIX</a>
+      </div>   <!--box---------->
+      <div class="refbox">
+        <a id="citeR"
+          href="Wikipedia contributors. (2022, April 20). Unix. Wikipedia. https://en.wikipedia.org/wiki/Unix"
+          target="_blank">Wikipedia contributors. (2022, April 20). Unix. Wikipedia. https://en.wikipedia.org/wiki/Unix</a>
+      </div>
+      <div class="refbox">
+        <a id="citeR"
+          href="youtube. (2022). Youtube. https://www.youtube.com"
+          target="_blank">youtube. (2022). Youtube. https://www.youtube.com</a>
+      </div>
+    
+  </section>
+
+
+
+  <!--footer------------->
+  <footer>
+    <a href="home.html">UNIX Wiki</a>
+    <p>Copyright (C) 2022 UNIX Wiki.</p>
+  </footer>
+  <!--type.js-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+
+      strings: [],
+      typeSpeed: 100,
+      backSpeed: 70,
+      loop: true,
+      
+    });
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  </body>
+
+</html>

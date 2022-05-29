@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>website HTML CSS</title>
+    <link rel="stylesheet" href="css/commands.css" />
+    <script src="js/unix.js"></script>
+
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <!--==Import-Poppins-Font-Family=============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<>
+    <section class="main">
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="home.html" class="logo">
+                <img src="images/logo.png" />
+            </a>
+            <!--menu-btn----------->
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-items----------->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="Components.html">Components</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ref.html"> References</a></li>
+
+            </ul>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+
+        <!--main-content-->
+        <div class="home-content">
+            <!--text-->
+            <div class="home-text">
+                <h1>UNIX <span class="auto-type"></span></strong></h1>
+                <p id="rb" onmouseout="mouseout();" onmouseover="mouseover();">
+                Learn basic UNIX commands. </p>
+                <!--login-btn-->
+                <a href="#" class="main-login">Home</a>
+            </div>
+            <!--img-->
+            <div class="home-logo">
+                <img src="images/cmd.png" />
+            </div>
+        </div>
+        <!--arrow-->
+        <div class="arrow"></div>
+        <span class="scroll">Scroll</span>
+    </section>
+
+    <section id="blog">
+
+        <h1 class="comTitle">FILES</h1>
+        <div class="grad-bar"></div>
+
+        <!--container---------------->
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">ls</a>
+                    <p>lists your files</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">s -l</a>
+                    <p>lists your files in 'long format', which contains lots of useful information, e.g. the exact size
+                        of the file, who owns the file and who has the right to look at it, and when it was last
+                        modified. </p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">ls -a </a>
+                    <p> lists all files, including the ones whose filenames begin in a dot, which you do not always want
+                        to see.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">more filename </a>
+                    <p>shows the first part of a file, just as much as will fit on one screen. Just hit the space bar to
+                        see more or q to quit. You can use /pattern to search for a pattern..</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">emacs filename</a>
+                    <p>is an editor that lets you create and edit a file..</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">mv filename1 filename2 </a>
+                    <p>moves a file. It gives it a different name, or moves it into a different directory</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">cp filename1 filename2</a>
+                    <p>copies a file</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">rm filename</a>
+                    <p>removes a file. It is wise to use the option rm -i, which will ask you for confirmation before
+                        actually deleting anything. You can make this your default by making an alias in your .cshrc
+                        file..</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">diff filename1 filename2 </a>
+                    <p> compares files, and shows where they differ </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">wc filename</a>
+                    <p>tells you how many lines, words, and characters there are in a file.</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">chmod options filename</a>
+                    <p>lets you change the read, write, and execute permissions on your files. The default is that only
+                        you can look at them and change them. </p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">gzip filename</a>
+                    <p>compresses files, so that they take up much less space. Usually text files compress to about half
+                        their original size, but it depends very much on the size of the file and the nature of the
+                        contents. </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="blog-container">
+            <!--box-1------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">gunzip filename</a>
+                    <p>Novell purchases AT&T's Unix System Laboratories and all Unix rights.</p>
+                </div>
+
+            </div>
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">gzcat filename</a>
+                    <p>lets you look at a gzipped file without actually having to gunzip it (same as gunzip -c). You can
+                        even print it directly, using gzcat filename | lpr</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">lpr filename</a>
+                    <p>Use the -P option to specify the printer name if you want to use a printer other than your
+                        default printer.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <h1 class="comTitle">DIRECTORIES</h1>
+        <div class="grad-bar"></div>
+
+        <!--container---------------->
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">mkdir dirname</a>
+                    <p>make a new directory</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">cd dirname</a>
+                    <p>change directory. You basically 'go' to another directory, and you will see the files in that
+                        directory when you do 'ls'. </p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">pwd</a>
+                    <p>tells you where you currently are.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h1 class="comTitle">LOCAL (USER) INFO</h1>
+        <div class="grad-bar"></div>
+        <!--container---------------->
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">whoami</a>
+                    <p> returns your username.</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">passwd</a>
+                    <p>lets you change your password, which you should do regularly </p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">ps -u yourusername</a>
+                    <p> lists your processes. Contains lots of information about them, including the process ID</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="blog-container">
+
+            <!--box-1------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">kill PID </a>
+                    <p> kills (ends) the processes with the ID you gave.</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-2------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">quota -v </a>
+                    <p>show what your disk quota is</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!--box-3------------->
+            <div class="blog-box">
+
+                <!--text--->
+                <div class="blog-text">
+                    <a class="blog-title">du filename </a>
+                    <p>shows the disk usage of the files and directories in filename</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!--footer------------->
+    <footer>
+        <a href="home.html">UNIX Wiki</a>
+        <p>Copyright (C) 2022 UNIX Wiki.</p>
+    </footer>
+    <!--type.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+
+            strings: ['cmd', '< / >'],
+            typeSpeed: 100,
+            backSpeed: 70,
+            loop: true,
+        });
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+    </body>
+
+</html>

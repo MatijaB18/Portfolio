@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="css/whyStyle.css"/>
+<script src="js/unix.js"></script>
+
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--==Import-Poppins-Font-Family=============-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="home.html" class="logo">
+                <img src="images/logo.png"/>
+            </a>
+            <!--menu-btn----------->
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="Components.html">Components</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ref.html"> References</a></li>
+
+            </ul>
+        </nav>
+        <!--main-content-->
+        <div class="home-content">
+            <!--text-->
+            <div class="home-text">
+                <h1>What is <span class="auto-type"></span></strong></h1>
+                <p id="rb" onmouseout="mouseout();" onmouseover="mouseover();"></p>
+                <p>The Open Group's registered brand Unix (formally UNIX) refers to a family of computer operating systems and tools that comply with The Open Group Base Specification, Issue 7. (also known as POSIX.1-2008 or IEEE Std 1003.1 - 2008). An operating system provider must pay a licensing fee and annual trademark royalties to The Open Group in order to use the Unix brand. OS X (Apple), Solaris (Oracle), AIX (IBM), IRIX (SGI), and HP-UX are all officially licensed Unix operating systems (and their vendors) (Hewlett-Packard) </p>
+                <h3>Why is it so popular?</h3>
+                <p>Unix was created using a high-level programming language (C) rather than a platform-specific assembly language, allowing it to run on a variety of computers. Unix was also created as a self-contained software system that included the operating system, development environment, tools, documentation, and editable source code. <br>
+                    These fundamental elements aided Unix and its derivatives in becoming an important teaching and learning tool in academic contexts, as well as widespread use and subsequent development in business settings.</p>
+            <!--login-btn-->
+            <a href="about.html" class="main-login">Home</a>
+            </div>
+            <!--img-->
+            <div class="home-logo">
+                <img src="images/about.png"/>
+            </div>
+            <div class="home-text">
+                <h3>Industry</h3>
+                <p>Unix-based systems can be found in a variety of professional settings, running critical applications in high-availability infrastructures. 
+                    Unix is an excellent platform for utility servers like DNS, DHCP, and Web servers. Its lean architecture saves resources for the apps you want to run rather than using them to boot the operating system. 
+                    For programs that do not require direct user contact with the operating system, Unix provides a robust and secure platform. </p>
+                <h3>Education</h3>
+                <p>Unix-based systems may be found all across the academic world, where they are used to teach students both basic and advanced computing topics. Unix is an excellent platform for teaching system administration as well as basic computing ideas. This has the extra benefit of allowing students to learn in a setting that is more similar to what they would find in the real world. 
+                    Unix also comes with built-in native tools and functions, making it the system of choice for teaching programming and scripting in a variety of languages without the need for cumbersome development environments and system emulators.</p>
+            <!--login-btn-->
+            <a href="#" class="main-login">Home</a>
+            </div>
+            <!--img-->
+           
+        </div>
+        <!--arrow-->
+        <!-- <div class="arrow"></div>
+        <span class="scroll">Scroll</span> -->
+    </section>
+    
+   
+
+
+      
+    <!--footer------------->
+    <footer>
+        <a href="home.html">UNIX Wiki</a>
+        <p>Copyright (C) 2022 UNIX Wiki.</p>
+    </footer>
+      <!--type.js-->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+          var typed = new Typed(".auto-type",{
+    
+        strings: ['UNIX?','it for?' ],
+        typeSpeed:100,
+        backSpeed:70,
+        loop:true,
+        });
+        </script>
+     </script>
+</body>
+
+</html>

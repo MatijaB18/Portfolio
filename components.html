@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Components</title>
+<link rel="stylesheet" href="css/components.css"/>
+<script src="js/unix.js"></script>
+
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/logo.png"/>
+<script src="js/unix.js"></script>
+<!--==Import-Poppins-Font-Family-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <!--navigation-->
+      
+        <nav>
+            <!--logo-->
+            <a href="home.html" class="logo">
+                <img src="images/logo.png"/>
+            </a>
+            <!--menu-btn-->
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="Components.html">Components</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ref.html"> References</a></li>
+
+            </ul>
+        </nav>
+     
+       
+        <!--main-content-->
+        <div class="home-content">
+            <!--text-->
+            <div class="home-text">
+               
+                <h1>The <span class="auto-type"></span></strong></h1>
+                <p id="rb" onmouseout="mouseout();" onmouseover="mouseover();"> learn about the structure UNIX </p>
+            <!--login-btn-->
+            <a href="about.html" class="more">Learn More</a>
+            </div>
+            <!--img-->
+            <div class="home-logo">
+                <img src="images/logo.png"/>
+            </div>
+        </div>
+      
+        <!--arrow-->
+        <div class="arrow"></div>
+        <span class="scroll">Scroll</span>
+    </section>
+    <!--services-->
+    
+    <section class="services">
+        <!--box-container-->
+        <div class="box-container">
+            <!--box-1-->
+            <div class="box">
+                <img src="images/settings.png">
+                <font> Kernal</font>
+                <p>Kernel
+                    It is a part of the operating system. It interacts directly with the hardware of the computer with the help of a device that is built into the kernel.</p>
+            <br><h3>Functions of Kernel</h3>
+                <p>The functions of the kernel are as follows 
+                    
+                    Memory management
+                    
+                    Controlling access to the computer.
+                    
+                    Maintaining the file system.
+                    
+                    Handling interrupts.
+                    
+                    Handling errors.
+                    
+                    Performing input and output services.
+                    
+                    Kernel allocates the resources of the computer to the users.
+                    
+                    The kernel is the most important part of the Architecture of UNIX OS</p>
+              <!--box-->
+            </div>
+            <!--box-2-->
+            <div class="box">
+                <img src="images/file.png">
+                <font>Hardware</font>
+                <p> 
+                    The hardware is nothing but the parts of a computer that includes clocks, timers, devices, parts etc. in the Unix OS Architecture. </p>
+              <!--box-->
+             
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="images/shell.png">
+                <font>Shell</font>
+                <p> It is a software program that acts as a mediator between the kernel and the user. It reads the commands and interrupts by sending requests to execute a program. So, the shell is known as a command interpreter.
+
+                    It contains almost 100 system calls and tells the kernel to carry out various tasks for the program. These tasks are as follows −
+                    
+                    Opening a file.
+                    
+                    Writing a file.
+                    
+                    Obtaining information about a file.
+                    
+                    Executing programs.
+                    
+                    Terminating a process.
+                    
+                    Changing the priority of processes.
+                    
+                    Getting the time and date.
+                    
+                    </p>
+              <!--box-->
+            </div>
+           
+        </div>
+    </section>
+    <!--footer------------->
+    <footer>
+        <a href="home.html">UNIX Wiki</a>
+        <p>Copyright (C) 2022 UNIX Wiki.</p>
+    </footer>
+   <!--type.js-->
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+       var typed = new Typed(".auto-type",{
+ 
+     strings: ['components' ],
+     typeSpeed:100,
+     backSpeed:70,
+     loop:true,
+     });
+     </script>
+</body>
+
+</html>
